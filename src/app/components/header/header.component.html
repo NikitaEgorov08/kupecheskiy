@@ -1,6 +1,6 @@
 <div class="header">
   <div class="header-menu">
-    <a routerLink="/front-page" class="menu-link">
+    <a routerLink="/" class="menu-link">
       <hr />
       Главная</a
     >
@@ -41,9 +41,7 @@
     </div>
   </ng-template>
   <div class="mobile-menu" *ngIf="mobileMenuShow">
-    <a routerLink="/front-page" class="menu-link" (click)="toggleMenu()">
-      Главная</a
-    >
+    <a routerLink="/" class="menu-link" (click)="toggleMenu()"> Главная</a>
     <a routerLink="/shops" class="menu-link" (click)="toggleMenu()">
       Магазины и услуги</a
     >
