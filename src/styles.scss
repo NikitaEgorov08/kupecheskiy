@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: url(../src/assets/bg.jpg) no-repeat center center/cover fixed;
+  font-family: "Fira Sans";
+}
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+span {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+}
+p {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+}

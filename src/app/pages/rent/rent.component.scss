@@ -1,0 +1,52 @@
+.rent {
+  padding: 120px 0;
+  width: 46%;
+  text-align: center;
+  margin: 0 auto;
+  h2 {
+    color: #342216;
+    font-size: 32px;
+  }
+  h3 {
+    color: #342216;
+    font-size: 24px;
+  }
+  span {
+    color: #342216;
+    display: block;
+    padding: 16px 0;
+  }
+  hr {
+    background-color: #342216;
+    border: none;
+    height: 1px;
+  }
+  .card {
+    width: 90%;
+  }
+  .info {
+    text-align: left;
+    position: relative;
+
+    margin: 0 auto;
+    padding: 16px 0;
+    color: #342216;
+    font-weight: 500;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: #342216;
+      top: 40%;
+      left: -3%;
+
+      border-radius: 10px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .rent {
+    width: 90%;
+  }
+}

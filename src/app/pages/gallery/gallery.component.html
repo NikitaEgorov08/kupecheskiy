@@ -1,0 +1,21 @@
+<div class="gallery">
+  <div class="gallery-cards">
+    <img
+      [src]="img.url"
+      alt=""
+      class="card"
+      *ngFor="let img of photos"
+      (click)="modalImage(img.id)"
+    />
+  </div>
+
+  <div class="gallery-modal" *ngIf="modalImageOpen">
+    <img [src]="'../../../assets/img/gallery/' + currentId + '.jpg'" />
+    <img class="prev" src="../../../assets/arrow.svg" alt="" (click)="prev()" />
+    <img class="next" src="../../../assets/arrow.svg" alt="" (click)="next()" />
+    <div class="gallery-modal__close" (click)="modalImage(0)">
+      <div class="part"></div>
+      <div class="part2"></div>
+    </div>
+  </div>
+</div>

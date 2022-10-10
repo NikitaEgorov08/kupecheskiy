@@ -1,0 +1,38 @@
+.contacts {
+  padding: 120px 0;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  .contact-item {
+    display: block;
+    padding: 8px 0;
+    font-weight: 600;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .icons {
+    .icon {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .contact-email {
+    margin-top: 8px;
+    .email-title {
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .email-item {
+      font-weight: 600;
+      color: black;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts {
+    width: 90%;
+    .contact-item {
+      width: 100%;
+    }
+  }
+}

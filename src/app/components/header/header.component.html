@@ -1,0 +1,59 @@
+<div class="header">
+  <div class="header-menu">
+    <a routerLink="/front-page" class="menu-link">
+      <hr />
+      Главная</a
+    >
+    <a routerLink="/shops" class="menu-link">
+      <hr />
+      Магазины и услуги</a
+    >
+    <a routerLink="/about" class="menu-link">
+      <hr />
+      О нас</a
+    >
+    <a routerLink="/gallery" class="menu-link">
+      <hr />
+      Галерея</a
+    >
+    <a routerLink="/rent" class="menu-link">
+      <hr />
+      Аренда</a
+    >
+    <a routerLink="/contacts" class="menu-link">
+      <hr />
+      Контакты</a
+    >
+  </div>
+  <div
+    class="bg-menu"
+    (click)="toggleMenu()"
+    *ngIf="!mobileMenuShow; else close"
+  >
+    <div class="part"></div>
+    <div class="part"></div>
+    <div class="part"></div>
+  </div>
+  <ng-template #close>
+    <div class="bg-menu__close" (click)="toggleMenu()">
+      <div class="part"></div>
+      <div class="part2"></div>
+    </div>
+  </ng-template>
+  <div class="mobile-menu" *ngIf="mobileMenuShow">
+    <a routerLink="/front-page" class="menu-link" (click)="toggleMenu()">
+      Главная</a
+    >
+    <a routerLink="/shops" class="menu-link" (click)="toggleMenu()">
+      Магазины и услуги</a
+    >
+    <a routerLink="/about" class="menu-link" (click)="toggleMenu()"> О нас</a>
+    <a routerLink="/gallery" class="menu-link" (click)="toggleMenu()">
+      Галерея</a
+    >
+    <a routerLink="/rent" class="menu-link" (click)="toggleMenu()"> Аренда</a>
+    <a routerLink="/contacts" class="menu-link" (click)="toggleMenu()">
+      Контакты</a
+    >
+  </div>
+</div>

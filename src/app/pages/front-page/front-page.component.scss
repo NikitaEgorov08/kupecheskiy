@@ -1,0 +1,16 @@
+.front-page {
+  padding: 80px 0;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+
+  &__image {
+    width: 90%;
+    border: 4px #fff solid;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .front-page {
+    width: 80%;
+  }
+}
